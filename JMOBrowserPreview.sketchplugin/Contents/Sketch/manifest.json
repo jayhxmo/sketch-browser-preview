@@ -1,0 +1,28 @@
+{
+  "name": "JMO Browser Preview",
+  "identifier": "com.sketchapp.browserpreview",
+  "version": "1.1.0",
+  "description": "Generates a preview of your current artboard and shows in your web browser.",
+  "manifestUrl": "https://github.com/jayhxmo/sketch-browser-preview/blob/master/BrowserPreview.sketchplugin/Contents/Sketch/manifest.json",
+  "compatibleVersion": "4.1",
+  "commands": [
+    {
+      "script": "previewFull.js",
+      "handler": "onRun",
+      "shortcut": "cmd shift ,",
+      "name": "Preview in Browser at 100% Width",
+      "identifier": "browser_preview_100w",
+    },
+    {
+      "script": "previewReal.js",
+      "handler": "onRun",
+      "shortcut": "cmd shift .",
+      "name": "Preview in Browser at Artboard Width",
+      "identifier": "browser_preview_aw",
+    }
+  ],
+  "menu": {
+    "title": "JMO Browser Preview",
+    "items": ["browser_preview_100w", "browser_preview_aw"]
+  }
+}
